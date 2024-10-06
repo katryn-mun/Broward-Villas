@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+}
+/* Navigation */
+nav{
+    background-color: #fff8ed;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    position: sticky;
+    height: 30px;
+    color: #304254;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li{
+    padding: 15px ;
+    
+}
+ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* header & Hero */
+header{
+    background-image: url(./images/hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #fff8ed;
+}
+.title-heading{
+    border: 5px solid white;
+    padding: 200px;
+    
+}
+#fort_lauderdale_font{
+    font-size: 20px;
+}
+#broward_font{
+    font-size: 90px;
+}
+#country_getaway_font{
+    font-size: 30px
+}
+
+/* section */
+section{
+    color: #fff8ed;
+    padding: 4%;
+}
+.experience-color{
+    background-color:#642b62 ;
+}
+.experience{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#experience_paragraph{
+    text-align: center;
+    font-size: 30px;
+}
+.all-sections{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+.svg-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 190px));
+    justify-content: center;
+    gap: 130px;
+}
+/* villas section */
+.villas{
+    background-color: #fff8ed;
+    color: #642b62;
+    text-align: center;
+    font-size: 60px;
+    padding: 50px;
+}
+.villas-imgs{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.livingroom-img{
+    border-radius: 400px 400px 0px 0px;
+}
+.villa-line-1{
+    font-weight: bold;
+    font-size: 25px;
+}
+.villa-line-2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.villa-line-3{
+    margin-top: 8px;
+    font-size: 17px;
+}
+.villa-line-4{
+    font-size: 17px;
+}
+
+/* garden villa */
+/* .garden_villa_img{
+    display: flex;
+    justify-content: right
+} */
+.garden_villa{
+    background-color: #fff8ed;
+    display: grid;
+    justify-items:right;
+}
+
+#garden_villa_img{
+    width: 600px;
+    display: grid;
+    justify-items: right;
+}
+#garden-villa-text{
+    color: #642b62;
+    display: flex;
+    justify-items: left;
+}
+
+/* next section */
+#fifth-section{
+    background-color: #b093a8;
+    display: flex;
+    gap: 400px;
+}
+#bedroom-text-img{
+    width: 4vh;
+    text-align: center;
+    font-size: 20px;
+    
+}
+#bed-img{
+    /* width: 500px; */
+    margin-bottom: 45px;
+}
+#women-img{
+    gap: 46px;
+    /* width: auto;
+    height: 60vh; */
+}
+#women-text-img{
+    gap: 45px;
+}
+/* special offers */
+.special-offers{
+    background-color: #fff8ed;
+    color: #642b62;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    gap: 230px;
+    
+}

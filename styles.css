@@ -1,13 +1,17 @@
 *{
     margin: 0px;
 }
+html{
+    scroll-behavior:smooth;
+}
 /* Navigation */
-nav{
+.nav{
+    position: sticky;
+    top: 0;
     background-color: #fff8ed;
     display: flex;
     justify-content: flex-end;
     padding: 5px;
-    position: sticky;
     height: 30px;
     color: #304254;
     font-size: 15px;
@@ -15,22 +19,25 @@ nav{
     font-weight: 700;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-li{
-    padding: 15px ;
-    
+#nav-ul li{
+    padding: 15px;
 }
-ul{
+#nav-ul{
     display: flex;
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+#nav-ul li a{
+    text-decoration: none;
+    color: black;
 }
 /* header & Hero */
 header{
     background-image: url(./images/hero_bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 80vh;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -38,35 +45,57 @@ header{
 }
 .title-heading{
     border: 5px solid white;
-    padding: 200px;
-    
+    padding: 100px;
+    line-height: 90px;
+    display: grid;
+    width: 1000px;
+    text-align: center;
 }
 #fort_lauderdale_font{
     font-size: 20px;
+    text-align: center;
 }
 #broward_font{
-    font-size: 90px;
+    font-size: 150px;
+    padding: 10px;
 }
 #country_getaway_font{
-    font-size: 30px
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#book-stay{
+    text-align: center;
+    font-size: 20px;
+    background-color:#b093a8;
+    justify-self: center;
+    width: 300px;
 }
 
-/* section */
+/* experience */
 section{
     color: #fff8ed;
     padding: 4%;
 }
 .experience-color{
-    background-color:#642b62 ;
+    background-color:#642b62;
+    display: grid;
+    justify-content: ce;
 }
 .experience{
     font-size: 60px;
     text-align: center;
-    padding-bottom: 30px;
+    padding: 50px;
+    width: 900px;
+    justify-self: center;
+}
+.experience p{
+    font-weight: 100;
 }
 #experience_paragraph{
     text-align: center;
     font-size: 30px;
+    font-weight: 100;
 }
 .all-sections{
     display: grid;
@@ -111,58 +140,173 @@ section{
 }
 
 /* garden villa */
-/* .garden_villa_img{
-    display: flex;
-    justify-content: right
-} */
+
 .garden_villa{
     background-color: #fff8ed;
     display: grid;
-    justify-items:right;
 }
-
 #garden_villa_img{
     width: 600px;
     display: grid;
-    justify-items: right;
 }
-#garden-villa-text{
+.garden-villa-text-and-image{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+}
+.garden-villa-text{
     color: #642b62;
-    display: flex;
-    justify-items: left;
+    display: grid;
+    width: 400px;
+    font-size: 30px;
+    text-align: center;
+    justify-items: center;
+}
+.garden-villa-text h1{
+    position: relative;
+    top: 150px;
+}
+.garden-villa-text hr{
+    width: 200px;
+    height: 2px;
+    color: black;
+}
+.garden-villa-text p{
+    top: -100px;
 }
 
 /* next section */
 #fifth-section{
     background-color: #b093a8;
-    display: flex;
-    gap: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 #bedroom-text-img{
-    width: 4vh;
     text-align: center;
     font-size: 20px;
-    
 }
 #bed-img{
-    /* width: 500px; */
+    width: 500px;
     margin-bottom: 45px;
+    height: 500px;
 }
 #women-img{
-    gap: 46px;
-    /* width: auto;
-    height: 60vh; */
+    width: 500px;
+    margin-top: 45px;
+    object-fit: cover;
+    height: 500px;
 }
 #women-text-img{
-    gap: 45px;
+    text-align: center;
+    font-size: 20px;
 }
+
 /* special offers */
 .special-offers{
     background-color: #fff8ed;
     color: #642b62;
     text-align: center;
+}
+#special-offers h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+.special-offers-container{
     display: flex;
     justify-content:center;
-    gap: 230px;
-    
+    align-items: baseline;
+    margin-top: 70px;
+    gap: 70px;
+    font-size: 25px;
+}
+.special-first-line{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px;
+}
+.special-imgs{
+    height: 225px;
+}
+
+/* guest review*/
+.guest-section{
+    background-color: #642b62;
+    display: grid;
+    justify-items:center;
+    text-align: center;
+}
+.guest-section h1{
+    font-size: 50px;
+    padding-bottom: 150px;
+    font-weight: 100;
+    width: 400px;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.review{
+    font-size: 20px;
+    text-align: left;
+    padding: 30px;   
+}
+.review p{
+    line-height: 1.5;
+}
+.review hr{
+    margin-bottom: 30px;
+    width: 200px;
+}
+.guest-names{
+    font-family: "Great Vibes";
+}
+
+/* footer-video */
+footer{
+    align-items: center;
+    height: 90vh;
+    display: grid;
+}
+.video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-text{
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    display: grid;
+    grid-template-rows: 60% 30% 10%;
+    gap: 30%;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.video-heading{
+    z-index: 1;
+}
+.video-heading h1, h2{
+    font-weight: 100;
+}
+.icons-container{
+    z-index: 1;
+}
+.icon{
+    width: 40px;
+}
+.icons-and-text{
+    display: flex;
+    gap: 900px;
+}
+.video-contact{
+    z-index: 1;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+.fair-hill-text{
+    z-index: 1;
+    color: white;
+    font-family: "Great Vibes";
 }

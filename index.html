@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Broward Villas</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home </li>
-            <li>About</li>
-            <li>Villas</li>
-            <li>Offers</li>
-            <li>Testimonials</li>
-            <li>Contact</li>
+    <nav class="nav">
+        <ul id="nav-ul">
+            <li> <a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#villas">Villas</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li> <a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <header>
         <div class="title-heading">
             <h5 id="fort_lauderdale_font">FORT LAUDERDALE</h5>
-            <h1 id="broward_font">Broward Villas</h1>
+            <h1 id="broward_font" style="font-family: 'Great Vibes';">Broward Villas</h1>
             <h4 id="country_getaway_font">A Country Getaway</h4>
-            <h5>BOOK YOUR STAY NOW</h5>
+            <h5 id="book-stay">BOOK YOUR STAY NOW</h5>
         </div>
     </header>
+    <!-- Experience -->
     <div class="all-sections">
-        <section class="experience-color">
+        <section class="experience-color" id="about">
             <div class="experience">
-                <p>Experience a serene retreat surrounded</p>
-                <p> by nature and grandeur.</p>
+                <p>Experience a serene retreat surrounded by nature and grandeur.</p>
             </div>
             <!-- images would go here -->
             <div class="svg-images">
@@ -40,12 +43,14 @@
                 <img src="./images/palm_tree.svg" alt="Palm Tree" width="240px">
             </div>
             <div id="experience_paragraph">
-                <p >What's special about your product, service, or company? Use this space to highlight the things</p>
-                <p> set you apart from your competition, whether it's a special feature, a unique philosophy, or awards</p>
-                <p>and recognition that you have received. Think of this as your elevator pitch to get the reader's attention.</p>   
+                <p>What's special about your product, service, or company? Use this space to highlight the things</p>
+                <p> set you apart from your competition, whether it's a special feature, a unique philosophy, or awards
+                </p>
+                <p>and recognition that you have received. Think of this as your elevator pitch to get the reader's
+                    attention.</p>
             </div>
         </section>
-        <section class="villas">
+        <section class="villas" id="villas">
             <p>Villas</p>
             <div class="villas-imgs">
                 <div>
@@ -55,7 +60,7 @@
                     <p class="villa-line-3">Max 3 Guests</p>
                     <p class="villa-line-4">1 Queen or 2 Twin Beds</p>
                 </div>
-                <div >
+                <div>
                     <img src="./images/small_house.webp" alt="Side of house" width="300px" class="livingroom-img">
                     <p class="villa-line-1">Courtyard Villa</p>
                     <p class="villa-line-2">starts at $339/night</p>
@@ -64,20 +69,23 @@
                 </div>
                 <div>
                     <img src="./images/pool.webp" alt="Pool" width=300px class="livingroom-img">
-                    <p class="villa-line-1">2-BR Poolside Villa</p> 
+                    <p class="villa-line-1">2-BR Poolside Villa</p>
                     <p class="villa-line-2">starts at $399/night</p>
                     <p class="villa-line-3">Max 5 Guests</p>
-                    <p class="villa-line-4">2 King or 3 Queen Beds</p> 
+                    <p class="villa-line-4">2 King or 3 Queen Beds</p>
                 </div>
             </div>
         </section>
         <section class="garden_villa">
-            <div id="garden-villa-text">
-                <p>Garden Villa</p>
-                <p>Showcase the best your property has to offer</p> 
-                <p>by highlighting one of your accommodations.</p>
-                <p>Add a flattering photo, then describe the room's best feature.</p>
-                <img id="garden_villa_img" src="./images/livingroom.jpg" alt="">
+            <div class="garden-villa-text-and-image">
+                <div class="garden-villa-text">
+                    <h1>Garden Villa</h1>
+                    <hr>
+                    </hr>
+                    <p>Showcase the best your property has to offer by highlighting one of your accommodations. Add a
+                        flattering photo, then describe the room's best feature.</p>
+                </div>
+                <img id="garden_villa_img" src="./images/livingroom.jpg" alt="outdoor living room">
             </div>
         </section>
         <section id="fifth-section">
@@ -89,33 +97,98 @@
             <div id="women-text-img">
                 <p>An intriguing caption that describes the room goes here.</p>
                 <p>Use a flattering photo, then describe away.</p>
-                <img id="women-img" src="./images/Women_smiling.jpg" alt="Women Smiling"> 
+                <img id="women-img" src="./images/Women_smiling.jpg" alt="Women Smiling">
             </div>
         </section>
-        <section class="special-offers">
-            <p>Special Offers</p>
-            <div >
-                <img src="./images/flower.svg" alt="flowers">
-                <p>Summer to Remember</p>
-                <p>List your offers, promos, or special</p>
-                <p>membership privileges and perks here</p>
-                <p>to entice people to book your property.</p>    
-            </div>
-            <div>
-                <img src="./images/wine_bottle.svg" alt="wine bottle">
-                <p>Wine and Dine</p>
-                <p>List your offers, promos, or special</p>
-                <p>membership privileges and perks here</p>
-                <p>to entice people to book your property.</p>
-            </div>
-            <div>
-                <img src="./images/present.svg" alt="present">
-                <p>Weekend Wanderlust</p>
-                <p>List your offers, promos, or special</p>
-                <p>membership privileges and perks here</p>
-                <p>to entice people to book your property.</p>
+        <section class="special-offers" id="offers">
+            <h1>Special Offers</h1>
+            <div class="special-offers-container">
+                <div>
+                    <img class="special-imgs" src="./images/flower.svg" alt="flowers">
+                    <p class="special-first-line">Summer to Remember</p>
+                    <p>List your offers, promos, or special
+                        membership privileges and perks here
+                        to entice people to book your property.</p>
+                </div>
+                <div>
+                    <img class="special-imgs" src="./images/wine_bottle.svg" alt="wine bottle">
+                    <p class="special-first-line">Wine and Dine</p>
+                    <p>List your offers, promos, or special
+                        membership privileges and perks here
+                        to entice people to book your property.</p>
+                </div>
+                <div>
+                    <img class="special-imgs" src="./images/present.svg" alt="present">
+                    <p class="special-first-line">Weekend Wanderlust</p>
+                    <p>List your offers, promos, or special
+                        membership privileges and perks here
+                        to entice people to book your property.</p>
+                </div>
             </div>
         </section>
+
+        <!-- What Our Guests Say About Us -->
+        <section class="guest-section" id="testimonials">
+            <h1>What Our Guests Say About Us</h1>
+            <div class="reviews-container">
+                <div class="review">
+                    <hr>
+                    <p>"Boost your product and service's
+                        credibility by adding testimonials from
+                        your clients. People love
+                        recommendations so feedback from
+                        others who've tried it is invaluable."</p>
+                    <br>
+                    <p class="guest-names">Larisa Varma</p>
+                </div>
+                <div class="review">
+                    <hr>
+                    <p>“Testimonials are short quotes from
+                        people who love your brand. It's a
+                        great way to convince customers to
+                        try your services.”</p>
+                    <br>
+                    <p class="guest-names">Gaja Dubicki</p>
+                </div>
+                <div class="review">
+                    <hr>
+                    <p>"Boost your product and service's
+                        credibility by adding testimonials from
+                        your clients. People love
+                        recommendations so feedback from
+                        others who've tried it is invaluable."</p>
+                    <br>
+                    <p class="guest-names">Posha Chopra</p>
+                </div>
+        </section>
+        <footer id="contact">
+            <div class="video-text">
+                <div class="video-heading">
+                    <h2>See you soon —</h2>
+                    <h1>We'll be waiting for you.</h1>
+                </div>
+                <div class="video-contact">
+                    <p>Sunfolk Valley</p>
+                    <p>+123-456-7890</p>
+                    <p>hello@reallygreatsite.com</p>
+                </div>
+                <div class="icons-and-text">
+                    <div class="icons-container">
+                        <img class="icon" src="./images/facebook.svg" alt="Facebook">
+                        <img class="icon" src="./images/instagram.svg" alt="instagram">
+                        <img class="icon" src="./images/twitter.svg" alt="twitter">
+                    </div>
+                    <div class="fair-hill-text">
+                        <p>Fairhill Villas</p>
+                    </div>
+                </div>
+
+            </div>
+            <video class="video" muted loop autoplay>
+                <source src="https://browardvillas.my.canva.site/videos/7a46582bacd06b4270bb59ffa392f559.mp4">
+            </video>
+        </footer>
     </div>
 </body>
+
 </html>
